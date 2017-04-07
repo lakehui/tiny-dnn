@@ -674,7 +674,7 @@ inline std::shared_ptr<layer> create_convlayer(
   }
 
   auto conv = std::make_shared<conv_layer>(
-    in_width, in_height, window_size_h, window_size_w, in_channels, out_channels, table,
+    in_width, in_height, window_size_w, window_size_h, in_channels, out_channels, table,
     pad_type, has_bias, w_stride, h_stride);
   // filler
   if (conv_param.has_weight_filler()) {
